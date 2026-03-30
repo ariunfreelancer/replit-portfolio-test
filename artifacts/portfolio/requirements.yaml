@@ -1,0 +1,10 @@
+packages:
+  "framer-motion": "For premium smooth scroll animations and page transitions"
+  "clsx": "For conditional tailwind class joining"
+  "tailwind-merge": "For safely merging tailwind classes in components"
+
+images: []
+
+notes:
+  - "Pure static frontend portfolio, no backend required."
+  - "Using CSS gradients and framer-motion for visual depth and premium feel instead of heavy images."
