@@ -13,7 +13,6 @@ export function HeroSection() {
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 w-full">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-
           {/* Left: Text content */}
           <div className="flex-1 min-w-0">
             <motion.div
@@ -23,7 +22,9 @@ export function HeroSection() {
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary border border-border mb-8"
             >
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-sm font-medium text-muted-foreground">Available for new projects</span>
+              <span className="text-sm font-medium text-muted-foreground">
+                Available for new projects
+              </span>
             </motion.div>
 
             <motion.h1
@@ -44,7 +45,9 @@ export function HeroSection() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-base md:text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl"
             >
-              Building SaaS products and web apps for international clients. I specialize in fullstack development — from robust backends to polished user interfaces.
+              Building SaaS products and web apps for international clients. I
+              specialize in fullstack development — from robust backends to
+              polished user interfaces.
             </motion.p>
 
             <motion.div
@@ -101,10 +104,16 @@ export function HeroSection() {
                 transition={{ duration: 0.4, delay: 0.6 }}
                 className="absolute -bottom-4 -left-4 flex items-center gap-2.5 bg-card border border-border rounded-2xl px-4 py-3 shadow-xl"
               >
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm">4+</div>
+                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm">
+                  4+
+                </div>
                 <div>
-                  <p className="text-xs text-muted-foreground leading-none mb-0.5">Years of</p>
-                  <p className="text-sm font-semibold leading-none">Experience</p>
+                  <p className="text-xs text-muted-foreground leading-none mb-0.5">
+                    Years of
+                  </p>
+                  <p className="text-sm font-semibold leading-none">
+                    Experience
+                  </p>
                 </div>
               </motion.div>
 
@@ -117,13 +126,16 @@ export function HeroSection() {
               >
                 <span className="text-lg">🚀</span>
                 <div>
-                  <p className="text-xs text-muted-foreground leading-none mb-0.5">Built</p>
-                  <p className="text-sm font-semibold leading-none">SaaS Apps</p>
+                  <p className="text-xs text-muted-foreground leading-none mb-0.5">
+                    Built
+                  </p>
+                  <p className="text-sm font-semibold leading-none">
+                    SaaS, CMS Apps
+                  </p>
                 </div>
               </motion.div>
             </div>
           </motion.div>
-
         </div>
       </div>
     </section>
