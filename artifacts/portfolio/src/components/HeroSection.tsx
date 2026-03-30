@@ -125,13 +125,9 @@ export function HeroSection() {
                 className="absolute -top-4 -right-4 flex items-center gap-2 bg-card border border-border rounded-2xl px-4 py-3 shadow-xl"
               >
                 <span className="text-lg">🚀</span>
-                <div>
-                  <p className="text-xs text-muted-foreground leading-none mb-0.5">
-                    Built
-                  </p>
-                  <p className="text-sm font-semibold leading-none">
-                    SaaS, CMS Apps
-                  </p>
+                <div>            
+                  <p className="text-xs text-muted-foreground leading-none mb-0.5">Built</p>
+                  <p className="text-sm font-semibold leading-none">Fullstack Web Apps</p>
                 </div>
               </motion.div>
             </div>
