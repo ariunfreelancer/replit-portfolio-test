@@ -70,7 +70,7 @@ export function ExperienceSection() {
                   href="mailto:ariunfreelancer@gmail.com"
                   className="group flex items-center justify-between p-5 rounded-2xl bg-secondary border border-border hover:border-primary/50 transition-all duration-300"
                 >
-                  <div className="break-word">
+                  <div className="break-all">
                     <p className="text-sm text-muted-foreground mb-1">
                       Email Me
                     </p>
