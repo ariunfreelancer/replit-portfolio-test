@@ -26,7 +26,7 @@ export function Navbar() {
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent",
         isScrolled
-          ? "bg-background/80 backdrop-blur-md border-border py-4 shadow-sm"
+          ? "nav-glass bg-background/80 backdrop-blur-md border-border py-4 shadow-sm"
           : "bg-transparent py-6"
       )}
     >
@@ -72,7 +72,7 @@ export function Navbar() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="md:hidden absolute top-full left-0 w-full bg-background border-b border-border shadow-xl py-4 px-6 flex flex-col gap-4"
+          className="mobile-motion-static md:hidden absolute top-full left-0 w-full bg-background border-b border-border shadow-xl py-4 px-6 flex flex-col gap-4"
         >
           {NAV_LINKS.map((link) => (
             <a

@@ -46,7 +46,7 @@ export function TechStackSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="text-3xl md:text-5xl font-display font-bold mb-6"
+            className="mobile-motion-static text-3xl md:text-5xl font-display font-bold mb-6"
           >
             Tech Stack & <span className="text-primary">Expertise</span>
           </motion.h2>
@@ -54,7 +54,7 @@ export function TechStackSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="text-lg text-muted-foreground"
+            className="mobile-motion-static text-lg text-muted-foreground"
           >
             I've built a number of SaaS apps and CMS platforms. Here's what I use to deliver robust, production-ready technical solutions.
           </motion.p>
@@ -65,13 +65,13 @@ export function TechStackSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+          className="mobile-motion-static grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
         >
           {TECH_CATEGORIES.map((category, idx) => (
             <motion.div 
               key={idx} 
               variants={itemVariants}
-              className="glass-card rounded-3xl p-8 hover:border-primary/30 transition-colors duration-300 group"
+              className="mobile-motion-static glass-card rounded-3xl p-8 hover:border-primary/30 transition-colors duration-300 group"
             >
               <div className="w-14 h-14 rounded-2xl bg-secondary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 {category.icon}

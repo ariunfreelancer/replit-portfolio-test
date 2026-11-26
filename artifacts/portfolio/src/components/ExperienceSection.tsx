@@ -19,6 +19,7 @@ export function ExperienceSection() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
+            className="mobile-motion-static"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border mb-6">
               <Briefcase className="w-4 h-4 text-primary" />
@@ -40,7 +41,7 @@ export function ExperienceSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
-                  className="flex items-start gap-4"
+                  className="mobile-motion-static flex items-start gap-4"
                 >
                   <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-0.5" />
                   <span className="text-lg text-muted-foreground">{item}</span>
@@ -53,7 +54,7 @@ export function ExperienceSection() {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="glass-card rounded-[2.5rem] p-10 md:p-12 relative overflow-hidden"
+            className="mobile-motion-static glass-card rounded-[2.5rem] p-10 md:p-12 relative overflow-hidden"
           >
             {/* Soft inner glow */}
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/10 via-transparent to-transparent pointer-events-none" />

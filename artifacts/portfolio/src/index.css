@@ -103,3 +103,77 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+/*
+ * WebKit has inconsistent compositing for fixed backgrounds, large blurs,
+ * and backdrop filters. Keep the same look with simpler, predictable layers.
+ */
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .text-gradient {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: none;
+    background-position: center;
+  }
+
+  .glass-card,
+  .nav-glass {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background-color: rgba(19, 22, 34, 0.96);
+  }
+
+  .hero-glow {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background-attachment: scroll;
+  }
+
+  #hero {
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+
+  .mobile-motion-static {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .text-gradient {
+    animation: none;
+    background-position: center;
+  }
+
+  .glass-card,
+  .nav-glass {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background-color: rgba(19, 22, 34, 0.96);
+  }
+
+  .hero-glow {
+    display: none;
+  }
+}
